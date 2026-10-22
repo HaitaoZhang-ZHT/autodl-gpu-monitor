@@ -176,7 +176,7 @@ python autodl_monitor.py --test-email
 
 Server酱、Webhook 可与邮件同时启用。
 
-## 7. 文件说明与再次分享
+## 7. 文件说明
 
 ```text
 autodl/
@@ -191,12 +191,4 @@ autodl/
     └── monitor.log     运行后自动产生的日志；不提交到 Git
 ```
 
-恢复空白配置：先保留自己仍需使用的配置，再用 `config.example.json` 的内容覆盖 `config.json`。
-
-自己填写信息并运行后，再次分享时请：
-
-1. 将 `config.json` 恢复成空白模板，移除 token、邮箱、API Key 和私人 Webhook 地址。
-2. 清空 `smtp_password.txt`，如创建过 `token.txt` 或 `.env` 也应移除其中凭证。
-3. 清空运行日志，不夹带截图、备份配置、编辑器备份或缓存。
-
-`.gitignore` 只影响 Git 对未跟踪文件的处理，不会自动清理已跟踪文件、历史提交或 ZIP 压缩包；手动打包前仍需检查。若凭证已公开泄露，应在对应服务中撤销或更换。
+`config.json`、`smtp_password.txt` 和运行日志属于本地文件，已通过 `.gitignore` 排除，请勿上传个人凭证。
