@@ -1,0 +1,37 @@
+{
+  "api_base": "https://api.autodl.com",
+  "authorization": "",
+  "regions": [
+    "北京A区"
+  ],
+  "gpus": [
+    "RTX 2080 Ti"
+  ],
+  "min_idle_gpu": 1,
+  "gpu_match": "loose",
+  "interval_seconds": 30,
+  "timeout_seconds": 20,
+  "page_size": 100,
+  "max_pages": 5,
+  "notify_on_change_only": true,
+  "cooldown_seconds": 180,
+  "open_browser_on_new": true,
+  "market_url": "https://www.autodl.com/market/list/",
+  "notification": {
+    "sendkey": "",
+    "webhook_url": "",
+    "resend_api_key": "",
+    "email": {
+      "enabled": false,
+      "smtp_host": "smtp.qq.com",
+      "smtp_port": 465,
+      "use_ssl": true,
+      "smtp_user": "",
+      "from": "",
+      "to": [],
+      "subject_prefix": "[AutoDL监控] ",
+      "password": "",
+      "cooldown_seconds": 900
+    }
+  }
+}

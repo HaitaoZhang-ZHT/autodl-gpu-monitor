@@ -1,0 +1,7 @@
+config.json
+token.txt
+smtp_password.txt
+logs/
+__pycache__/
+*.py[cod]
+.env
